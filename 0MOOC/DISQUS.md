@@ -39,10 +39,26 @@ Password：用户自定义的登录密码
 gitbook.com
 gitbooks.io
 
+在页面下方点击"save changes"完成设置
 
+在gitbook 里面安装disqus插件。
+登录gitbook, 点击上方help，进入官方bangzhu帮助文档。
+在第一章format的第十三小节1.13就是plugins插件的使用和安装。
+选择该小节，首先就是“how to find plugins”，并给出了一个网址：plugins .gitbook.com
+xuanze该选择网址，即可找到disqus的对应plugin插件.
+To use the Disqus plugin in your Gitbook project, add the disqus plugin to the  book.json  file, along with your shortname (you create a shortname for disqus by creating a new website on the disqus.com website)
+{
+    "plugins": ["disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "XXXXXXX"
+        }
+    }
+}
 
-一个disqus用户帐号可以设立多个disqus个人站点。
+注意，上述plugin插件无法直接从plugins网站上拷贝粘贴到github的book.json文件中。需要先粘贴到写字板notepad中，再粘贴到book.json才能成功。这可能是因为在plugins网站上的代码内容有一些格式控制符是github不接受的。
 
+ 
 
 
 
