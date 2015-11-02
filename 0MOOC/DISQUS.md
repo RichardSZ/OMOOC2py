@@ -31,7 +31,9 @@ Password：用户自定义的登录密码
 在category里选择一个合适的内容分类。
 点击右下角“finish registration”
 就完成了个人站点的注册和设立。
+此时
 
+一个disqus用户帐号可以设立多个disqus个人站点。
 
 
 
