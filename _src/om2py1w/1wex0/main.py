@@ -1,14 +1,15 @@
-from sys import argv
+prompt=">"
 
-script,filename = argv
+filename=raw_input(prompt)
 
-targetline = raw_input("Please type in your dairy here: \n")
-print("\nyour recent typing is:\n%s\n")%targetline 
+Mydairy=open(filename)
+print("Historic dairy:" )
+print Mydairy.read()
+print "\n"
 
+print"Dairy now..."
+
+targetline = raw_input(">>>") 
 Mydairy=open(filename,'a+')
 Mydairy.write("\n")
 Mydairy.write(targetline)
-
-Mydairy=open(filename)
-print("Your dairy record is:" )
-print Mydairy.read()
