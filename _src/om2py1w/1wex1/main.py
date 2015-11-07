@@ -20,4 +20,4 @@ while typein <> strq:
 	    print("h for help")
 	    print("q for abort")
     typein = raw_input(">>>")
-print "goodbye!"
+print "goodbye! and goodbye"
