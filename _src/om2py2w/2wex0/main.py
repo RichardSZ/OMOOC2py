@@ -27,8 +27,7 @@ class Application(tk.Frame):
          Mydairy=open("dairy",'a+')
          Mydairy.write(self.Textbox.get()+'\n')
          Mydairy.close()
-'''	 
-		
+'''	 	
 def textsave():    
      tk.self.Textbox.get()
      Mydairy=open("dairy",'a+')
