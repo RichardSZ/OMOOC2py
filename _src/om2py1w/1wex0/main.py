@@ -17,14 +17,11 @@ while True:
 	     print "goodbye"
 	     break
     else:
-         Mydairy=open('mydairy.txt','a')
+         Mydairy=open(log,'a')
          print("dairy log record:" )
-         Mydairy=open('mydairy.txt','r')
+         Mydairy=open(log,'r')
          print Mydairy.read()
-         print "\n"
          print"Dairy input now..."
-         #target = raw_input(">>>") 
-         #target = message
          Mydairy=open('mydairy.txt','a+')
          Mydairy.write("\n")
          Mydairy.write(message)
