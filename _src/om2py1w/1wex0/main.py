@@ -2,7 +2,7 @@
 
 #filename=raw_input(prompt)
 
-
+log = 'mydairy.txt'
 h = ['h','H','help','HELP','?']
 q = ['q','quit','abort']
 
@@ -17,13 +17,14 @@ while True:
 	     print "goodbye"
 	     break
     else:
+         Mydairy=open('mydairy.txt','a')
+         print("dairy log record:" )
          Mydairy=open('mydairy.txt','r')
-         print("dairy log:" )
          print Mydairy.read()
          print "\n"
-         print"Dairy now..."
+         print"Dairy input now..."
          #target = raw_input(">>>") 
-         target = message
+         #target = message
          Mydairy=open('mydairy.txt','a+')
          Mydairy.write("\n")
-         Mydairy.write(target)
+         Mydairy.write(message)
